@@ -1,0 +1,7 @@
+services:
+  mongo_experiment:
+    container_name: mongo_experiment
+    image: mongo:4.0.20
+    command: --storageEngine mmapv1 --nojournal --syncdelay 0
+    ports:
+      - "37017:27017"
